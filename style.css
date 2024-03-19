@@ -42,7 +42,6 @@ input, button, textarea {
 
 
 header {
-    
     background-color: #FC4242;
 }
 
@@ -81,6 +80,7 @@ img {
     height: 769px;
     width: 100%;
     background-size: cover;
+    background-position: center;
 }
 
 .btn-participe {
