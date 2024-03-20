@@ -443,7 +443,7 @@ h2 {
     }
     .botao {
         width: 100%;
-        max-width: 100%;
+        max-width: 340px;
         height: auto;
         padding: 20px;
         text-align: center;
@@ -531,5 +531,11 @@ h2 {
     }
     .item_agenda:last-child {
         margin-bottom: -30px;
+    }
+    .card {
+        width: auto;
+        max-width: 480px;
+        align-self: center;
+        margin: 0 auto;
     }
 }
