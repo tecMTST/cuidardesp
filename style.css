@@ -278,8 +278,7 @@ h2 {
     gap: 60px;
 }
 
-#informacoes,
-.informacoes {
+#informacoes {
     background-color: #08F477;
     min-height: 500px;
     border-radius: 60px;
