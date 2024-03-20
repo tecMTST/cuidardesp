@@ -22,15 +22,11 @@ a {
 
 /* Defina as fontes para terem um tamanho padrão em todos os navegadores */
 body {
-    font-family: 'Montserrat', sans-serif; /* Use uma fonte comum como fallback */
-    width: 1440px;
+    font-family: 'Montserrat', sans-serif !important; /* Use uma fonte comum como fallback */
+    width: 1440px !important;
     max-width: 100%;
-    margin: 0 auto;
-}
-
-/* Defina a cor de fundo padrão para o corpo */
-body {
-    background-color: #fff;
+    margin: 0 auto !important;
+    background-color: #fff !important;
 }
 
 /* Corrija possíveis problemas de margem e preenchimento em elementos de formulário */
@@ -70,7 +66,10 @@ img {
     line-height: 150%;
     font-weight: normal;
 }
-
+.menu a{
+    color: #fff;
+    text-decoration: none;
+}
 .logo {
     max-width: 296px;
 }
@@ -98,9 +97,10 @@ img {
 }
 
 h2 {
-    font-size: 56px;
-    line-height: 150%;
-    color: #0885F7;
+    font-size: 56px !important;
+    line-height: 150% !important;
+    color: #065EAF !important;
+    font-weight: 700 !important;
 }
 
 .content-box {
@@ -114,7 +114,7 @@ h2 {
     gap: 60px;
 }
 
-.btn {
+.botao {
     display: flex;
     width: 467px;
     height: 107px;
@@ -126,13 +126,14 @@ h2 {
     align-items: center;
     border-radius: 54px;
     margin: 0 auto;
+    text-decoration: none;
 }
 
 .menu li a {
     font-weight: bold;
 }
 
-#proposta {
+.proposta {
     background-color: rgb(254, 228, 64);
     padding-top: 80px;
     border-radius: 60px;
@@ -234,13 +235,13 @@ h2 {
     z-index: 0;
 }
 
-.btn.btn-agenda {
+.botao.btn-agenda {
     width: 180px;
     height: 62px;
     font-size: 20px;
 }
 
-.btn.btn-agenda {
+.botao.btn-agenda {
     width: 180px;
     height: 62px;
     font-size: 20px;
@@ -254,4 +255,54 @@ h2 {
 .cont-agenda {
     display: flex;
     justify-content: space-around;
+}
+
+
+
+
+
+
+#participe-hero {
+    background-image: url(img/participe-hero.png);
+    height: 39.5rem;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    margin-top: -4.8rem;/*cortar a parte branca da imagem de referência*/
+    background-repeat: no-repeat;
+}
+.participe-row{
+    top: 3rem;
+}
+.participe-row a{
+    text-decoration: none;
+    color: #0885F7;
+    font-size: 20px;
+    font-weight: 700;
+    row-gap: 24.08px;
+}
+.saiba-mais{
+    margin-top: 21.438rem;
+    margin-bottom: 13.563rem;
+}
+.proposta-wrapper{
+    margin-right: 19rem;
+}
+
+.proposta .item_content p{
+    width: 39.313rem;
+    margin-top: -3rem;
+}
+
+.proposta-card{
+    width: 366px;
+    height: 550px !important;
+    background-color: #FC4242 !important;
+    border: none !important;
+    border-radius: 30px !important;
+    top: 10.5rem;
+    left: 17.25rem;
+}
+.proposta-btn{
+    width: 17.375rem;
 }
