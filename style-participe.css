@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset básico CSS */
+
+/* Defina a margem e o preenchimento padrão como 0 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Isso garante que a largura e a altura dos elementos incluam a borda e o preenchimento, mas não a margem */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Remova a decoração de lista */
+ul, ol {
+    list-style: none;
+}
+
+/* Defina o estilo do hyperlink como texto normal e remova a sublinhado padrão */
+a {
+    text-decoration: none;
+    color: inherit; /* Herda a cor do texto do elemento pai */
+}
+
+/* Defina as fontes para terem um tamanho padrão em todos os navegadores */
+body {
+    font-family: 'Montserrat', sans-serif !important; /* Use uma fonte comum como fallback */
+    width: 1440px !important;
+    max-width: 100%;
+    margin: 0 auto !important;
+    background-color: #fff !important;
+}
+
+/* Corrija possíveis problemas de margem e preenchimento em elementos de formulário */
+input, button, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: #FC4242;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-main {
+    display: flex;
+    height: 171px;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1240px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: normal;
+}
+.menu a{
+    color: #fff;
+    text-decoration: none;
+}
+.logo {
+    max-width: 296px;
+}
+
+#hero {
+    background-image: url(img/bg-hero.png);
+    height: 769px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-participe {
+    margin: -90px auto 0;
+    text-align: center;
+}
+
+#baixe-o-app {
+    padding: 90px 0;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 56px !important;
+    line-height: 150% !important;
+    color: #065EAF !important;
+    font-weight: 700 !important;
+}
+
+.content-box {
+    display: flex;
+    gap: 105px;
+}
+
+.item_content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.botao {
+    display: flex;
+    width: 467px;
+    height: 107px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0885F7;
+    justify-content: center;
+    align-items: center;
+    border-radius: 54px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.menu li a {
+    font-weight: bold;
+}
+
+.proposta {
+    background-color: rgb(254, 228, 64);
+    padding-top: 80px;
+    border-radius: 60px;
+}
+
+.target {
+    width: 504px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 429px;
+    border-radius: 20px;
+}
+
+
+.item_content p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #212121;
+}
+
+.container-content {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.content-box.content-bottom {
+    position: relative;
+    margin-bottom: -130px;
+}
+
+#participe {
+    padding-top: 190px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 60px;
+}
+
+#informacoes,
+.informacoes {
+    background-color: #08F477;
+    min-height: 500px;
+    border-radius: 60px;
+    margin-top: -250px;
+    padding-top: 400px;
+    height: 1458px;
+}
+
+.info-content {
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.cont-agenda {
+    display: flex;
+    gap: 80px;
+}
+
+.card {
+    width: 315px;
+    
+}
+
+.h2-agenda {
+    color: #212121;
+    margin-bottom: 82px;
+}
+
+.header-card {
+    background-color: #FC4242;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 162px;
+    border-radius: 20px;
+    z-index: 10;
+    position: relative;
+}
+
+.header-card h3 {
+    font-size: 40px;
+    color: #fff;
+}
+
+.thumb {
+    width: 100%;
+    margin-top: -28px;
+    position: relative;
+    z-index: 0;
+}
+
+.botao.btn-agenda {
+    width: 180px;
+    height: 62px;
+    font-size: 20px;
+}
+
+.botao.btn-agenda {
+    width: 180px;
+    height: 62px;
+    font-size: 20px;
+    position: relative;
+    z-index: 50;
+    float: right;
+    margin-top: -40px;
+    margin-right: -35px;
+}
+
+.cont-agenda {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* Footer */
+
+.footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0 50px;
+}
+
+.footer__logo {
+    display: block;
+}
+
+.footer__nav {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__menu {
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 50px auto 40px;
+    max-width: 15em;
+}
+
+.footer__item {
+    font-weight: 500;
+    text-align: center;
+}
+.footer__item ~ .footer__item {
+    margin-top: 0.6em;
+}
+.footer__item--ucase {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.footer__item--bold {
+    color: #0885F7;
+    font-weight: 700;
+}
+
+.footer__social {
+    align-items: center;
+    display: flex;
+}
+
+.footer__icon ~ .footer__icon {
+    margin-left: 4px;
+}
+.footer__icon a {
+    align-items: center;
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    width: 32px;
+}
+
+
+
+#participe-hero {
+    background-image: url(img/participe-hero.png);
+    height: 39.5rem;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    margin-top: -4.8rem;/*cortar a parte branca da imagem de referência*/
+    background-repeat: no-repeat;
+}
+.participe-row{
+    top: 3rem;
+}
+.participe-row a{
+    text-decoration: none;
+    color: #0885F7;
+    font-size: 20px;
+    font-weight: 700;
+    row-gap: 24.08px;
+}
+.saiba-mais{
+    margin-top: 21.438rem;
+    margin-bottom: 13.563rem;
+}
+
+.proposta-wrapper{
+    margin-left: 32rem;
+}
+
+.proposta .item_content p{
+    width: 39.313rem;
+    margin-top: -3rem;
+}
+
+.proposta-card{
+    width: 366px;
+    height: 550px !important;
+    background-color: #FC4242 !important;
+    border: none !important;
+    border-radius: 30px !important;
+    top: 5.5rem;
+    left: 18.5rem;
+}
+.proposta-btn{
+    width: 17.375rem;
+}
+.participe-box{
+    margin-right: 5rem;
+    margin-left: 16rem;
+    margin-top: 4rem;
+}
+.participe-card{
+    background-color: #0885F7 !important;
+    top: 0;
+    left: 0;
+}
+.participe-btn,
+.plenaria-card{
+    background-color: #FC4242 !important;
+}
+.grupo-card{
+    background-color: #08F477 !important;
+    top: 13rem;
+}
+.grupo-box{
+    padding-bottom: 4rem;
+}
+.grupo-wrapper{
+    margin-top: 7rem;
+}
+.card-img-top{
+    width: 80%;
+}
+.card{
+    align-items: center;
+}
+.plenaria-box{
+    margin-top: 8rem;
+}
+.plenaria-wrapper p,
+.banquinha-text p{
+    width: 39rem;
+}
+.banquinha{
+    margin-top: 7rem;
+    padding-bottom: 5rem;
+    height: auto;
+}
+.banquinha-card{
+    background-color: #0885F7 !important;
+}
+.banquinha-text h2,
+.banquinha-container h2{
+    color: #171717 !important;
+}
+.banquinha-container{
+    margin-top: 15rem;
+}
+
+@media screen and (min-width: 960px) {
+    .footer {
+        flex-direction: row;
+        margin: 150px 7% 80px;
+    }
+    
+    .footer__logo {
+        width: 463px;
+    }
+    
+    .footer__nav {
+        align-items: flex-start;
+        flex-direction: row;
+        flex-grow: 1;
+    }
+
+    .footer__menu {
+        font-size: 20px;
+        margin: 0 auto;
+    }
+
+    .footer__item {
+        font-size: 20px;
+        text-align: right;
+    }
+
+    .footer__social {
+        margin-top: 18px;
+    }
+}
