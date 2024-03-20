@@ -320,8 +320,6 @@ h2 {
     width: 32px;
 }
 
-
-
 #participe-hero {
     background-image: url(img/participe-hero.png);
     height: 39.5rem;
@@ -367,6 +365,10 @@ h2 {
     width: 17.375rem;
 }
 
+.h2-agenda {
+    color: #212121 !important;
+}
+
 @media screen and (min-width: 960px) {
     .footer {
         flex-direction: row;
@@ -395,5 +397,139 @@ h2 {
 
     .footer__social {
         margin-top: 18px;
+    }
+}
+
+@media (max-width:960px) {
+    ul.menu {
+        display: none;
+    }
+    .logo img {
+        max-width: 120px;
+    }
+    nav.nav-main {
+        height: auto;
+        padding: 20px 16px;
+    }
+    #hero {
+        height: 380px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    div#quem-somos {
+        padding: 0 16px;
+    }
+    #baixe-o-app {
+        padding: 60px 0;
+    }
+    .content-box {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        padding: 0 16px;
+    }
+    h2 {
+        font-size: 32px !important;
+        text-align: center;
+        line-height: 130% !important;
+    }
+    .item_content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 100%;
+    }
+    .botao {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .proposta {
+        background-color: rgb(254, 228, 64);
+        padding: 0 16px;
+        padding-top: 40px;
+        border-radius: 40px;
+    }
+    .proposta .item_content p {
+        width: 100%;
+        margin-top: 0;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+    }
+    .target {
+        max-width: 100%;
+        height: auto;
+        padding: 40px;
+    }
+    .container-content {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    .content-box:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+    .target.img-salvsp {
+        padding: 0;
+    }
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+        padding: 0 16px;
+    }
+    #informacoes {
+        background-color: #08F477;
+        min-height: 500px;
+        border-radius: 40px;
+        margin-top: -120px;
+        padding: 0 16px;
+        padding-top: 180px;
+        height: auto;
+    }
+    .info-content {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .h2-agenda {
+        color: #212121 !important;
+        margin-bottom: 40px;
+    }
+    .cont-agenda {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    .header-card h3 {
+        font-size: 24px;
+    }
+    .header-card {
+        height: auto;
+        padding: 20px 16px;
+    }
+    .thumb img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .cont-agenda {
+        gap: 40px;
+    }
+    .botao.btn-agenda {
+        margin-right: -10px;
+    }
+    .item_agenda:last-child {
+        margin-bottom: -30px;
     }
 }
