@@ -9,6 +9,10 @@
     box-sizing: border-box; /* Isso garante que a largura e a altura dos elementos incluam a borda e o preenchimento, mas não a margem */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Remova a decoração de lista */
 ul, ol {
     list-style: none;
@@ -345,6 +349,7 @@ h2 {
     .footer__social {
         margin-top: 18px;
     }
+}
 
 
 #participe-hero {
