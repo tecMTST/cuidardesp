@@ -278,7 +278,8 @@ h2 {
     gap: 60px;
 }
 
-#informacoes {
+#informacoes,
+.informacoes {
     background-color: #08F477;
     min-height: 500px;
     border-radius: 60px;
@@ -472,6 +473,7 @@ h2 {
     width: 32px;
 }
 
+
 @media screen and (min-width: 960px) {
     .footer {
         flex-direction: row;
@@ -503,7 +505,140 @@ h2 {
     }
 }
 
+
 /* <- Footer */
+
+
+
+
+#participe-hero {
+    background-image: url(img/participe-hero.png);
+    height: 39.5rem;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    margin-top: -4.8rem;/*cortar a parte branca da imagem de referência*/
+    background-repeat: no-repeat;
+}
+.participe-row{
+    top: 3rem;
+}
+.participe-row a{
+    text-decoration: none;
+    color: #0885F7;
+    font-size: 20px;
+    font-weight: 700;
+    row-gap: 24.08px;
+}
+.saiba-mais{
+    margin-top: 21.438rem;
+    margin-bottom: 13.563rem;
+}
+
+.proposta-wrapper{
+    margin-left: 32rem;
+}
+
+.proposta .item_content p{
+    width: 39.313rem;
+    margin-top: -3rem;
+}
+
+.proposta-card{
+    width: 366px;
+    height: 550px !important;
+    background-color: #FC4242 !important;
+    border: none !important;
+    border-radius: 30px !important;
+    top: 5.5rem;
+    left: 18.5rem;
+}
+.proposta-btn{
+    width: 17.375rem;
+}
+.participe-box{
+    margin-right: 5rem;
+    margin-left: 16rem;
+    margin-top: 4rem;
+}
+.participe-card{
+    background-color: #0885F7 !important;
+    top: 0;
+    left: 0;
+}
+.participe-btn,
+.plenaria-card{
+    background-color: #FC4242 !important;
+}
+.grupo-card{
+    background-color: #08F477 !important;
+    top: 13rem;
+}
+.grupo-box{
+    padding-bottom: 4rem;
+}
+.grupo-wrapper{
+    margin-top: 7rem;
+}
+.card-img-top{
+    width: 80%;
+}
+.card{
+    align-items: center;
+}
+.plenaria-box{
+    margin-top: 8rem;
+}
+.plenaria-wrapper p,
+.banquinha-text p{
+    width: 39rem;
+}
+.banquinha{
+    margin-top: 7rem;
+    padding-bottom: 5rem;
+    height: auto;
+}
+.banquinha-card{
+    background-color: #0885F7 !important;
+}
+.banquinha-text h2,
+.banquinha-container h2{
+    color: #171717 !important;
+}
+.banquinha-container{
+    margin-top: 15rem;
+}
+
+@media screen and (min-width: 960px) {
+    .footer {
+        flex-direction: row;
+        margin: 150px 7% 80px;
+    }
+    
+    .footer__logo {
+        width: 463px;
+    }
+    
+    .footer__nav {
+        align-items: flex-start;
+        flex-direction: row;
+        flex-grow: 1;
+    }
+
+    .footer__menu {
+        font-size: 20px;
+        margin: 0 auto;
+    }
+
+    .footer__item {
+        font-size: 20px;
+        text-align: right;
+    }
+
+    .footer__social {
+        margin-top: 18px;
+    }
+}
 
 @media (max-width:960px) {
     #hero {
