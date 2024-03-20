@@ -12,28 +12,44 @@
 </head>
 <body>
     <main>
-        <header>
-            <nav class="nav-main">
-                <div class="logo">
-                    <img src="../img/logo.svg" alt="Pra cuidar de São Paulo">
-                </div>
-                <ul class="menu">
-                    <li><a href="../index.html#quem-somos">Quem somos</a></li>
-                    <li><a href="../index.html#baixe-o-app">Baixe o aplicativo</a></li>
-                    <li><a href="../index.html#proposta">Proposta</a></li>
-                    <li><a href="../index.html#participe">Como Participar</a></li>
-                    <li><a href="../index.html#agenda">Agenda</a></li>
+        <header class="header">
+            <button type="button" class="header__toggle" aria-label="Abrir Menu" aria-controls="menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <h1 class="header__title">
+                <img class="header__logo" src="../img/logo.svg" alt="Pra cuidar de São Paulo" />
+            </h1>
+            <nav class="header__nav" id="menu" hidden>
+                <ul class="header__menu">
+                    <li class="header__item">
+                        <a href="../index.html#quem-somos">Quem somos</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="../index.html#baixe-o-app">Baixe o aplicativo</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="../index.html#proposta">Proposta</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="../index.html#participe">Como Participar</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="../index.html#agenda">Agenda</a>
+                    </li>
                 </ul>
             </nav>
         </header>
+
         <section id="participe-hero"></section>
         <section class="container position-relative">
-            <section class="participe-row row position-absolute start-50 translate-middle d-flex w-100">
-                <a class="col d-flex flex-wrap justify-content-center" href="#"><img src="../img/proposta.svg" alt="Criar proposta">Criar proposta</a>
-                <a class="col d-flex flex-wrap justify-content-center" href="#"><img src="../img/participe.svg" alt="Participe">Participe</a>
-                <a class="col d-flex flex-wrap justify-content-center" href="#"><img src="../img/grupo.svg" alt="Crie seu grupo">Crie seu grupo</a>
-                <a class="col d-flex flex-wrap justify-content-center" href="#"><img src="../img/plenarias.svg" alt="Plenárias">Plenárias</a>
-                <a class="col d-flex flex-wrap justify-content-center" href="#"><img src="../img/banquinhas.svg" alt="Banquinhas">Banquinhas</a>
+            <section class="participe-row row position-absolute start-50 translate-middle d-flex">
+                <a class="col d-flex flex-wrap justify-content-center text-center" href="#"><img src="../img/proposta.svg" alt="Criar proposta">Criar proposta</a>
+                <a class="col d-flex flex-wrap justify-content-center text-center" href="#"><img src="../img/participe.svg" alt="Participe">Participe</a>
+                <a class="col d-flex flex-wrap justify-content-center text-center" href="#"><img src="../img/grupo.svg" alt="Crie seu grupo">Crie seu grupo</a>
+                <a class="col d-flex flex-wrap justify-content-center text-center" href="#"><img src="../img/plenarias.svg" alt="Plenárias">Plenárias</a>
+                <a class="col d-flex flex-wrap justify-content-center text-center" href="#"><img src="../img/banquinhas.svg" alt="Banquinhas">Banquinhas</a>
             </section>
         </section>
         <section class="container d-flex justify-content-center">

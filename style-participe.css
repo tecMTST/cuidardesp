@@ -49,6 +49,137 @@ img {
     max-width: 100%;
     height: auto;
 }
+/* Header -> */
+
+.header {
+    align-items: center;
+    background: #FC4242;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 7% 20px;
+    position: relative;
+}
+
+.header__title {
+    margin: 0 auto;
+}
+
+.header__logo {
+    position: relative;
+    left: -18px;
+    width: 174px;
+}
+
+.header__toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    margin: -10px;
+}
+
+.header__toggle span {
+    background: #fff;
+    border-radius: 4px;
+    display: block;
+    height: 4px;
+    width: 36px;
+}
+
+.header__toggle span ~ span {
+    margin-top: 8px;
+}
+
+.header__nav {
+    background: inherit;
+    left: 0;
+    padding: 15px 0 60px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+}
+
+.header__menu {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 700;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.header__item a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+.header__item ~ .header__item {
+    margin-top: 1em;
+}
+
+@media screen and (min-width: 600px) {
+    .header__logo {
+        width: 232px;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .header {
+        padding: 58px 7% 12px;
+    }
+
+    .header__title {
+        margin: 0;
+    }
+
+    .header__logo {
+        position: static;
+    }
+
+    .header__toggle {
+        display: none;
+    }
+
+    .header__nav {
+        background: none;
+        display: block;
+        padding: 0;
+        position: static;
+        flex-grow: 1;
+    }
+
+    .header__menu {
+        flex-direction: row;
+    }
+
+    .header__item ~ .header__item {
+        margin-left: 2.5%;
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header__item ~ .header__item {
+        margin-left: 3.5%;
+    }
+}
+
+@media screen and (min-width: 1180px) {
+    .header__menu {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .header__item ~ .header__item {
+        margin-left: 6%;
+    }
+}
+
+/* <- Header */
 
 .nav-main {
     display: flex;
@@ -334,6 +465,7 @@ h2 {
 }
 .participe-row{
     top: 3rem;
+    width: 100%;
 }
 .participe-row a{
     text-decoration: none;
@@ -449,5 +581,19 @@ h2 {
 
     .footer__social {
         margin-top: 18px;
+    }
+}
+@media (max-width:960px) {
+    #participe-hero {
+        height: 380px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-size: cover;
+    }
+    .participe-row{
+        top: 18rem;
+        width: 100%;
+        align-items: baseline;
+        padding: 0 4rem;
     }
 }
