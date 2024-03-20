@@ -320,36 +320,6 @@ h2 {
     width: 32px;
 }
 
-@media screen and (min-width: 960px) {
-    .footer {
-        flex-direction: row;
-        margin: 150px 7% 80px;
-    }
-    
-    .footer__logo {
-        width: 463px;
-    }
-    
-    .footer__nav {
-        align-items: flex-start;
-        flex-direction: row;
-        flex-grow: 1;
-    }
-
-    .footer__menu {
-        font-size: 20px;
-        margin: 0 auto;
-    }
-
-    .footer__item {
-        font-size: 20px;
-        text-align: right;
-    }
-
-    .footer__social {
-        margin-top: 18px;
-    }
-}
 
 
 #participe-hero {
@@ -395,4 +365,35 @@ h2 {
 }
 .proposta-btn{
     width: 17.375rem;
+}
+
+@media screen and (min-width: 960px) {
+    .footer {
+        flex-direction: row;
+        margin: 150px 7% 80px;
+    }
+    
+    .footer__logo {
+        width: 463px;
+    }
+    
+    .footer__nav {
+        align-items: flex-start;
+        flex-direction: row;
+        flex-grow: 1;
+    }
+
+    .footer__menu {
+        font-size: 20px;
+        margin: 0 auto;
+    }
+
+    .footer__item {
+        font-size: 20px;
+        text-align: right;
+    }
+
+    .footer__social {
+        margin-top: 18px;
+    }
 }
