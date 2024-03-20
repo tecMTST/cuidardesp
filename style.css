@@ -322,7 +322,7 @@ h2 {
 }
 
 .header-card h3 {
-    font-size: 40px;
+    font-size: 30px;
     color: #fff;
 }
 
@@ -331,6 +331,13 @@ h2 {
     margin-top: -28px;
     position: relative;
     z-index: 0;
+    height: 456px;
+}
+
+.thumb img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
 }
 
 .botao.btn-agenda {
@@ -743,6 +750,9 @@ h2 {
     .header-card {
         height: auto;
         padding: 20px 16px;
+    }
+    .thumb {
+        height: auto;
     }
     .thumb img {
         height: 300px;
