@@ -40,43 +40,141 @@ input, button, textarea {
     box-sizing: border-box;
 }
 
-
-header {
-    background-color: #FC4242;
-}
-
 img {
     max-width: 100%;
     height: auto;
 }
 
-.nav-main {
-    display: flex;
-    height: 171px;
-    flex-direction: row;
+/* Header -> */
+
+.header {
     align-items: center;
-    max-width: 1240px;
+    background: #FC4242;
+    display: flex;
     justify-content: space-between;
+    padding: 30px 7% 20px;
+    position: relative;
+}
+
+.header__title {
     margin: 0 auto;
 }
 
-.menu {
+.header__logo {
+    position: relative;
+    left: -18px;
+    width: 174px;
+}
+
+.header__toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    margin: -10px;
+}
+
+.header__toggle span {
+    background: #fff;
+    border-radius: 4px;
+    display: block;
+    height: 4px;
+    width: 36px;
+}
+
+.header__toggle span ~ span {
+    margin-top: 8px;
+}
+
+.header__nav {
+    background: inherit;
+    left: 0;
+    padding: 15px 0 60px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+}
+
+.header__menu {
+    align-items: center;
     display: flex;
-    justify-content: space-between;
-    gap: 60px;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 700;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.header__item a {
     color: #fff;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 150%;
-    font-weight: normal;
+    display: block;
 }
-.menu a{
-    color: #fff;
-    text-decoration: none;
+
+.header__item ~ .header__item {
+    margin-top: 1em;
 }
-.logo {
-    max-width: 296px;
+
+@media screen and (min-width: 600px) {
+    .header__logo {
+        width: 232px;
+    }
 }
+
+@media screen and (min-width: 920px) {
+    .header {
+        padding: 58px 7% 12px;
+    }
+
+    .header__title {
+        margin: 0;
+    }
+
+    .header__logo {
+        position: static;
+    }
+
+    .header__toggle {
+        display: none;
+    }
+
+    .header__nav {
+        background: none;
+        display: block;
+        padding: 0;
+        position: static;
+        flex-grow: 1;
+    }
+
+    .header__menu {
+        flex-direction: row;
+    }
+
+    .header__item ~ .header__item {
+        margin-left: 2.5%;
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header__item ~ .header__item {
+        margin-left: 3.5%;
+    }
+}
+
+@media screen and (min-width: 1180px) {
+    .header__menu {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .header__item ~ .header__item {
+        margin-left: 6%;
+    }
+}
+
+/* <- Header */
 
 #hero {
     background-image: url(img/bg-hero.png);
@@ -131,10 +229,6 @@ h2 {
     border-radius: 54px;
     margin: 0 auto;
     text-decoration: none;
-}
-
-.menu li a {
-    font-weight: bold;
 }
 
 .proposta {
@@ -205,7 +299,7 @@ h2 {
 
 .card {
     width: 315px;
-    
+
 }
 
 .h2-agenda {
@@ -261,8 +355,62 @@ h2 {
     justify-content: space-around;
 }
 
+#participe-hero {
+    background-image: url(img/participe-hero.png);
+    height: 39.5rem;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    margin-top: -4.8rem;
+    /*cortar a parte branca da imagem de referência*/
+    background-repeat: no-repeat;
+}
 
-/* Footer */
+.participe-row {
+    top: 3rem;
+}
+
+.participe-row a {
+    text-decoration: none;
+    color: #0885F7;
+    font-size: 20px;
+    font-weight: 700;
+    row-gap: 24.08px;
+}
+
+.saiba-mais {
+    margin-top: 21.438rem;
+    margin-bottom: 13.563rem;
+}
+
+.proposta-wrapper {
+    margin-right: 19rem;
+}
+
+.proposta .item_content p {
+    width: 39.313rem;
+    margin-top: -3rem;
+}
+
+.proposta-card {
+    width: 366px;
+    height: 550px !important;
+    background-color: #FC4242 !important;
+    border: none !important;
+    border-radius: 30px !important;
+    top: 10.5rem;
+    left: 17.25rem;
+}
+
+.proposta-btn {
+    width: 17.375rem;
+}
+
+.h2-agenda {
+    color: #212121 !important;
+}
+
+/* Footer -> */
 
 .footer {
     align-items: center;
@@ -292,13 +440,16 @@ h2 {
     font-weight: 500;
     text-align: center;
 }
+
 .footer__item ~ .footer__item {
     margin-top: 0.6em;
 }
+
 .footer__item--ucase {
     font-weight: 700;
     text-transform: uppercase;
 }
+
 .footer__item--bold {
     color: #0885F7;
     font-weight: 700;
@@ -312,6 +463,7 @@ h2 {
 .footer__icon ~ .footer__icon {
     margin-left: 4px;
 }
+
 .footer__icon a {
     align-items: center;
     display: flex;
@@ -320,65 +472,16 @@ h2 {
     width: 32px;
 }
 
-#participe-hero {
-    background-image: url(img/participe-hero.png);
-    height: 39.5rem;
-    width: 100%;
-    background-size: contain;
-    background-position: center;
-    margin-top: -4.8rem;/*cortar a parte branca da imagem de referência*/
-    background-repeat: no-repeat;
-}
-.participe-row{
-    top: 3rem;
-}
-.participe-row a{
-    text-decoration: none;
-    color: #0885F7;
-    font-size: 20px;
-    font-weight: 700;
-    row-gap: 24.08px;
-}
-.saiba-mais{
-    margin-top: 21.438rem;
-    margin-bottom: 13.563rem;
-}
-.proposta-wrapper{
-    margin-right: 19rem;
-}
-
-.proposta .item_content p{
-    width: 39.313rem;
-    margin-top: -3rem;
-}
-
-.proposta-card{
-    width: 366px;
-    height: 550px !important;
-    background-color: #FC4242 !important;
-    border: none !important;
-    border-radius: 30px !important;
-    top: 10.5rem;
-    left: 17.25rem;
-}
-.proposta-btn{
-    width: 17.375rem;
-}
-
-.h2-agenda {
-    color: #212121 !important;
-}
-
 @media screen and (min-width: 960px) {
     .footer {
         flex-direction: row;
         margin: 150px 7% 80px;
     }
-    
+
     .footer__logo {
         width: 463px;
     }
-    
+
     .footer__nav {
         align-items: flex-start;
         flex-direction: row;
@@ -400,17 +503,9 @@ h2 {
     }
 }
 
+/* <- Footer */
+
 @media (max-width:960px) {
-    ul.menu {
-        display: none;
-    }
-    .logo img {
-        max-width: 120px;
-    }
-    nav.nav-main {
-        height: auto;
-        padding: 20px 16px;
-    }
     #hero {
         height: 380px;
         border-bottom-left-radius: 20px;

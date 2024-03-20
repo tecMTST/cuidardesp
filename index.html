@@ -10,17 +10,32 @@
 </head>
 
 <body>
-    <header>
-        <nav class="nav-main">
-            <div class="logo">
-                <img src="img/logo.svg" alt="Pra cuidar de São Paulo">
-            </div>
-            <ul class="menu">
-                <li><a href="#quem-somos">Quem somos</a></li>
-                <li><a href="#baixe-o-app">Baixe o aplicativo</a></li>
-                <li><a href="#proposta">Proposta</a></li>
-                <li><a href="#participe">Como Participar</a></li>
-                <li><a href="#agenda">Agenda</a></li>
+    <header class="header">
+        <button type="button" class="header__toggle" aria-label="Abrir Menu" aria-controls="menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <h1 class="header__title">
+            <img class="header__logo" src="img/logo.svg" alt="Pra cuidar de São Paulo" />
+        </h1>
+        <nav class="header__nav" id="menu" hidden>
+            <ul class="header__menu">
+                <li class="header__item">
+                    <a href="#quem-somos">Quem somos</a>
+                </li>
+                <li class="header__item">
+                    <a href="#baixe-o-app">Baixe o aplicativo</a>
+                </li>
+                <li class="header__item">
+                    <a href="#proposta">Proposta</a>
+                </li>
+                <li class="header__item">
+                    <a href="#participe">Como Participar</a>
+                </li>
+                <li class="header__item">
+                    <a href="#agenda">Agenda</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -188,6 +203,8 @@
             </ul>
         </nav>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 
 </html>
