@@ -7,9 +7,10 @@
 }
 
 .quem-somos #hero {
-    background-image: url(img/bg-quem-somos.jpeg);
+    background-image: url(img/bannerquemsomos_boulos.png);
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+    height: 591px;
 }
 
 .btn-participe {
@@ -576,12 +577,17 @@ h2 {
         /* padding: 60px 16px; */
     }
     .proposta.quem-somos {
-        margin-top: 70px;
+        margin-top: 60px;
         padding-bottom: 160px;
         padding: 60px 16px 80px !important;
     }
     .quem-somos .content-qs h2 {
         font-size: 36px !important;
+    }
+    .quem-somos #hero {
+        height: 230px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 }
 
