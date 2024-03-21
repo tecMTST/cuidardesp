@@ -6,6 +6,10 @@
     background-position: center;
 }
 
+.quem-somos #hero {
+    background-image: url(img/bg-quem-somos.jpeg);
+}
+
 .btn-participe {
     margin: -90px auto 0;
     text-align: center;
@@ -345,6 +349,27 @@ h2 {
     margin-top: 15rem;
 }
 
+.proposta.quem-somos {
+    margin-top: 70px;
+    padding-bottom: 160px;
+}
+
+.content-qs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.quem-somos p {
+    font-size: 38px;
+    line-height: 150%;
+}
+
 @media screen and (min-width: 960px) {
     .footer {
         flex-direction: row;
@@ -374,6 +399,7 @@ h2 {
     .footer__social {
         margin-top: 18px;
     }
+    
 }
 
 @media (max-width:960px) {
@@ -541,6 +567,19 @@ h2 {
         max-width: 480px;
         align-self: center;
         margin: 0 auto;
+    }
+    .quem-somos p {
+        font-size: 20px;
+        line-height: 150%;
+        /* padding: 60px 16px; */
+    }
+    .proposta.quem-somos {
+        margin-top: 70px;
+        padding-bottom: 160px;
+        padding: 60px 16px 80px !important;
+    }
+    .quem-somos .content-qs h2 {
+        font-size: 36px !important;
     }
 }
 
