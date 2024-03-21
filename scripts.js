@@ -6,6 +6,10 @@ var expanded = toggleBtn.getAttribute('aria-expanded') === 'true';
 var menu = document.querySelector('#' + menuId);
 var links = menu.querySelectorAll('a');
 
+var modal = document.querySelector('.modal')
+var modalBtn = document.querySelector('.modal__trigger')
+var modalClose = document.querySelector('.modal__close')
+
 function toggleElements() {
     if (expanded) {
         toggleBtn.setAttribute('aria-label', 'Fechar menu');
@@ -28,15 +32,23 @@ function handleLink() {
     handleToggle();
 }
 
-toggleBtn.addEventListener('click', handleToggle);
-links.forEach(function (link) {
+if (toggleBtn) toggleBtn.addEventListener('click', handleToggle);
+if (links) links.forEach(function (link) {
     link.addEventListener('click', handleLink);
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.no-click').forEach(function(link) {
-        link.addEventListener('click', function(event) {
-            event.preventDefault(); // Isso impede o comportamento padrão do clique
-        });
+if (modal && modalBtn) {
+    modal.addEventListener('click', function (event) {
+        event.stopPropagation();
+        modal.setAttribute('hidden', true);
+    });
+    modalBtn.addEventListener('click', function () {
+        modal.removeAttribute('hidden');
+    });
+}
+
+document.querySelectorAll('.no-click').forEach(function (link) {
+    link.addEventListener('click', function (event) {
+        event.preventDefault(); // Isso impede o comportamento padrão do clique
     });
 });

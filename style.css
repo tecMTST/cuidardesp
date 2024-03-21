@@ -543,3 +543,75 @@ h2 {
         margin: 0 auto;
     }
 }
+
+/* Modal -> */
+
+.modal {
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 50;
+}
+
+.modal[hidden] {
+    display: none;
+}
+
+.modal__trigger {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.modal__body {
+    background: #fff;
+    border-radius: 20px;
+    height: 300px;
+    max-width: 90vw;
+    position: relative;
+    width: 700px;
+}
+
+.modal__close {
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    font: 0/0 serif;
+    height: 30px;
+    margin: -10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+}
+
+.modal__close:before,
+.modal__close:after {
+    background: #000;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 18%;
+    margin-top: -1px;
+    position: absolute;
+    right: 18%;
+    top: 50%;
+}
+
+.modal__close:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.modal__close:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/* <- Modal */
