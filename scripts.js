@@ -32,3 +32,11 @@ toggleBtn.addEventListener('click', handleToggle);
 links.forEach(function (link) {
     link.addEventListener('click', handleLink);
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.no-click').forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Isso impede o comportamento padrão do clique
+        });
+    });
+});

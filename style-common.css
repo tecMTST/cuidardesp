@@ -230,6 +230,10 @@ img {
     width: 32px;
 }
 
+.no-click {
+    cursor: pointer;
+}
+
 
 @media screen and (min-width: 960px) {
     .footer {

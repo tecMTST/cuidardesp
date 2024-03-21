@@ -252,7 +252,7 @@ h2 {
 
 .proposta-card {
     width: 366px;
-    height: 550px !important;
+    height: 490px !important;
     background-color: #FC4242 !important;
     border: none !important;
     border-radius: 30px !important;
@@ -328,6 +328,10 @@ h2 {
 
 .banquinha-container {
     margin-top: 15rem;
+}
+
+#participe.proposta-card {
+    padding-top: 0;
 }
 
 @media (max-width:960px) {
