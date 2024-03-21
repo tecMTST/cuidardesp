@@ -106,12 +106,12 @@ h2 {
     border-radius: 60px;
     margin-top: -250px;
     padding-top: 400px;
-    height: 1458px;
+    height: 1150px;
 }
 
 .info-content {
     text-align: center;
-    margin-bottom: 120px;
+    margin-top: 90px;
 }
 
 .cont-agenda {
@@ -388,7 +388,7 @@ h2 {
     }
 
     #baixe-o-app {
-        padding: 60px 0;
+        padding: 40px 0 60px;
     }
 
     .content-box {
@@ -478,7 +478,8 @@ h2 {
 
     .info-content {
         text-align: center;
-        margin-bottom: 30px;
+        margin-top: 60px;
+        padding: 0 16px;
     }
 
     .h2-agenda {
