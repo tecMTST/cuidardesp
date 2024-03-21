@@ -393,7 +393,7 @@ h2 {
 
     .content-box {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 30px;
         justify-content: center;
         align-items: center;
@@ -450,7 +450,16 @@ h2 {
     }
 
     .content-box:nth-child(2) {
-        flex-direction: column-reverse;
+        flex-direction: column;
+    }
+
+    .content-box.content-bottom {
+        position: relative;
+        margin-bottom: -28px;
+    }
+
+    #participe {
+        padding-top: 120px;
     }
 
     .target.img-salvsp {
