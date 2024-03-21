@@ -245,7 +245,7 @@ h2 {
     margin-left: 32rem;
 }
 
-.proposta .item_content p {
+.item_content p {
     width: 39.313rem;
     margin-top: -3rem;
 }
@@ -331,6 +331,11 @@ h2 {
 }
 
 @media (max-width:960px) {
+    h2 {
+        font-size: 32px !important;
+        text-align: center;
+        line-height: 130% !important;
+    }
     #participe-hero {
         height: 380px;
         border-bottom-left-radius: 20px;
@@ -343,5 +348,97 @@ h2 {
         width: 100%;
         align-items: baseline;
         padding: 0 4rem;
+        row-gap: 2rem;
+    }
+    .container-content {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    .content-box {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center !important;
+        align-items: center;
+        padding: 0 16px;
+    }
+    .item_content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 100%;
+    }
+    .item_content p {
+        width: 100%;
+        margin-top: 0;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+    }
+    .botao {
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .last-col{
+        padding-left: 5.4rem;
+        padding-right: 5.4rem;
+    }
+    .saiba-mais{
+        margin-top: 42rem;
+        margin-bottom: 4rem;
+    }
+    .proposta-mobile{
+        display: block;
+    }
+    .grupo-mobile{
+        margin-bottom: -4rem;
+    }
+    .plenaria-mobile{
+        padding-top: 8rem;
+    }
+    .banquinha-mobile{
+        padding-top: 4rem;
+    }
+    .banquinha,
+    .banquinha-container{
+        margin-top: 4rem;
+        padding-bottom: 0;
+    }
+    .proposta-desk,
+    .participe-box,
+    .grupo-box,
+    .plenaria-box,
+    .banquinha-box{
+        display: none;
+    }
+    .target {
+        max-width: 100%;
+        height: auto;
+        padding: 40px;
+    }
+
+}
+@media (max-width:364px) {
+    .participe-row {
+        top: 18rem;
+        padding: 0 3rem;
+    }
+    .last-col {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+@media (min-width:960px) {
+    .proposta-mobile,
+    .participe-mobile,
+    .grupo-mobile,
+    .plenaria-mobile,
+    .banquinha-mobile{
+        display: none;
     }
 }

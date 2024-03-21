@@ -50,15 +50,15 @@
         <section id="participe-hero"></section>
         <section class="container position-relative">
             <section class="participe-row row position-absolute start-50 translate-middle d-flex">
-                <a class="col d-flex flex-wrap justify-content-center text-center" href="#"><img
-                        src="../img/proposta.svg" alt="Criar proposta">Criar proposta</a>
+                <a class="col d-flex flex-wrap justify-content-center text-center" href="#">
+                    <img src="../img/proposta.svg" alt="Criar proposta">Criar proposta</a>
                 <a class="col d-flex flex-wrap justify-content-center text-center" href="#"><img
                         src="../img/participe.svg" alt="Participe">Participe</a>
                 <a class="col d-flex flex-wrap justify-content-center text-center" href="#"><img src="../img/grupo.svg"
                         alt="Crie seu grupo">Crie seu grupo</a>
                 <a class="col d-flex flex-wrap justify-content-center text-center" href="#"><img
                         src="../img/plenarias.svg" alt="Plenárias">Plenárias</a>
-                <a class="col d-flex flex-wrap justify-content-center text-center" href="#"><img
+                <a class="col last-col d-flex flex-wrap justify-content-center text-center" href="#"><img
                         src="../img/banquinhas.svg" alt="Banquinhas">Banquinhas</a>
             </section>
         </section>
@@ -67,7 +67,7 @@
         </section>
         <section class="proposta">
             <section class="container-content">
-                <section class="content-box justify-content-end position-relative">
+                <section class="content-box proposta-desk justify-content-end position-relative">
                     <section
                         class="col card text-center proposta-card d-flex justify-content-center position-absolute translate-middle">
                         <img src="../img/proposta.svg" class="card-img-top" alt="...">
@@ -81,6 +81,23 @@
                         </p>
                     </section>
                 </section>
+                <section class="proposta-mobile">
+                    <div class="content-box">
+                        <div class="item_content">
+                            <h2>Crie sua proposta</h2>
+                            <p>Insira suas propostas e construa com a gente o programa da candidatura Boulos e Marta.
+                                Você pode apresentar suas propostas e contribuir para a construção da São Paulo que a
+                                gente quer!</p>
+                            <a href="https://salvesp.netlify.app/propostas/nova-proposta" class="botao">Criar
+                                proposta</a>
+                        </div>
+                        <div class="item_content">
+                            <div class="target" style="background-color: rgb(252, 66, 66);">
+                                <img src="../img/proposta.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section class="content-box flex-row-reverse align-items-center participe-box">
                     <section class="card text-center proposta-card participe-card d-flex justify-content-center">
                         <img src="../img/participe.svg" class="card-img-top" alt="...">
@@ -92,6 +109,21 @@
                         <p>Vote nas propostas! Você pode votar nas sugestões de propostas enviadas. As propostas melhor
                             avaliadas são enviadas para o Programa!</p>
                     </section>
+                </section>
+                <section class="participe-mobile">
+                    <div class="content-box">
+                        <div class="item_content" style="text-align: right;">
+                            <h2>Avalie as propostas</h2>
+                            <p>Vote nas propostas! Você pode votar nas sugestões de propostas enviadas. As propostas
+                                melhor avaliadas são enviadas para o Programa!</p>
+                            <a href="https://salvesp.netlify.app/vote" target="_blank" class="botao">Participe</a>
+                        </div>
+                        <div class="item_content">
+                            <div class="target" style="background-color: #0885F7;">
+                                <img src="../img/participe.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section class="content-box grupo-box justify-content-end position-relative">
                     <section
@@ -105,6 +137,21 @@
                         <p>Tem um grupo de pessoas que se dedica a um tema que pode se encaixar em alguns dos eixos do
                             nosso programa? Cadastre seu grupo que nós iremos até vocês ouvir suas propostas!</p>
                     </section>
+                </section>
+                <section class="grupo-mobile">
+                    <div class="content-box">
+                        <div class="item_content" style="text-align: right;">
+                            <h2>Crie seu Grupo</h2>
+                        <p>Tem um grupo de pessoas que se dedica a um tema que pode se encaixar em alguns dos eixos do
+                            nosso programa? Cadastre seu grupo que nós iremos até vocês ouvir suas propostas!</p>
+                            <a href="#" target="_blank" class="botao">Criar grupo</a>
+                        </div>
+                        <div class="item_content">
+                            <div class="target" style="background-color: #08F477;">
+                                <img src="../img/grupo.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </section>
         </section>
@@ -120,8 +167,24 @@
                     participe dessa construção com a gente!</p>
             </section>
         </section>
+        <section class="plenaria-mobile">
+            <div class="content-box">
+                <div class="item_content" style="text-align: right;">
+                    <h2>Participe de uma plenária</h2>
+                    <p>Fique ligada na nossa agenda! Vamos ocupar praças e espaços promovendo debates com nossos
+                        especialistas ao lado de Boulos e Marta sobre os temas do programa. Inscreva-se na sua plenária e
+                        participe dessa construção com a gente!</p>
+                    <a href="#" target="_blank" class="botao">Plenária</a>
+                </div>
+                <div class="item_content">
+                    <div class="target" style="background-color: #FC4242;">
+                        <img src="../img/plenarias.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="informacoes banquinha pt-0">
-            <section class="content-box justify-content-end position-relative">
+            <section class="content-box banquinha-box justify-content-end position-relative">
                 <section
                     class="col card text-center proposta-card grupo-card banquinha-card d-flex justify-content-center position-absolute translate-middle">
                     <img src="../img/banquinhas.svg" class="card-img-top" alt="...">
@@ -134,6 +197,22 @@
                         a cadastrarem suas propostas e utilizarem nosso aplicativo e nosso site. Vem construir com a
                         gente!</p>
                 </section>
+            </section>
+            <section class="banquinha-mobile">
+                <div class="content-box">
+                    <div class="item_content banquinha-text" style="text-align: right;">
+                        <h2>Participe de uma banquinha</h2>
+                        <p>Nossas clássicas banquinhas estarão espalhadas por vários pontos da cidade para ajudar as pessoas
+                            a cadastrarem suas propostas e utilizarem nosso aplicativo e nosso site. Vem construir com a
+                            gente!</p>
+                        <a href="#" target="_blank" class="botao">Banquinha</a>
+                    </div>
+                    <div class="item_content">
+                        <div class="target" style="background-color: #0885F7;">
+                            <img src="../img/banquinhas.svg" alt="">
+                        </div>
+                    </div>
+                </div>
             </section>
             <section class="container banquinha-container text-center">
                 <h2 class="mb-5">Encontre banquinhas próximas</h2>
