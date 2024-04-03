@@ -148,11 +148,13 @@ h2 {
     border-radius: 20px;
     z-index: 10;
     position: relative;
+    padding: 0 10px;
 }
 
 .header-card h3 {
     font-size: 30px;
     color: #fff;
+    text-align: center;
 }
 
 .thumb {
