@@ -445,7 +445,7 @@ h2 {
 }
 @media (max-width:480px) {
     .map-container {
-        padding-bottom: 440px!important;
+        padding-bottom: 540px!important;
     }
 }
 @media (max-width:364px) {
