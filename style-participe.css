@@ -453,7 +453,7 @@ h2 {
         padding-right: 5rem;
     }
     .map-container {
-        padding-bottom: 520px;
+        padding-bottom: 440px!important;
     }
 }
 @media (min-width:960px) {
