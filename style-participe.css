@@ -452,6 +452,9 @@ h2 {
         padding-left: 5rem;
         padding-right: 5rem;
     }
+    .map-container {
+        padding-bottom: 520px;
+    }
 }
 @media (min-width:960px) {
     .proposta-mobile,
