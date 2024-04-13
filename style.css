@@ -877,6 +877,7 @@ figure#fake {
     .cards-container .card-item {
         width: 100%;
         gap: 10px;
+        padding: 0 20px;
     }
     .cards-container {
         gap: 20px;
@@ -913,6 +914,12 @@ figure#fake {
     .links-facts a {
         font-size: 18px;
         width: auto;
+    }
+    .video-description a {
+        gap: 20px;
+    }
+    .fake-links .fake-title {
+        text-align: center;
     }
 }
 
