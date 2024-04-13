@@ -101,10 +101,25 @@ img {
 .header__item a {
     color: #fff;
     display: block;
+    font-size: 16px;
 }
 
 .header__item ~ .header__item {
     margin-top: 1em;
+}
+
+.menu-btn {
+    display: flex;
+    background-color: #FEE440;
+    width: 132px;
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 48px;
+}
+
+.menu-btn a {
+    color: #171717;
 }
 
 @media screen and (min-width: 600px) {
