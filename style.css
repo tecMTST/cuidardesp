@@ -618,6 +618,7 @@ figure#fake {
     margin: 0 auto;
     background-image: url(img/bg-form.svg);
     padding: 60px 16px;
+    border-radius: 60px;
 }
 
 #main-form h2 {
