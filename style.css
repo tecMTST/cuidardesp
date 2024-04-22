@@ -19,7 +19,7 @@
 }
 
 #baixe-o-app {
-    padding: 90px 0;
+    padding: 160px 0 120px;
 }
 
 .container {
@@ -607,6 +607,101 @@ figure#fake {
     content: 'SAIBA A VERDADE';
 }
 
+#mais-info {
+    padding: 110px 0;
+}
+
+#main-form {
+    width: 1240px;
+    max-width: 100%;
+    height: 863px;
+    margin: 0 auto;
+    background-image: url(img/bg-form.svg);
+    padding: 60px 16px;
+}
+
+#main-form h2 {
+    text-align: center;
+}
+
+#form-more-info {
+    width: 740px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#form-more-info form {
+    margin-top: 40px;
+}
+
+#form-more-info .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 34px;
+    border-bottom: 8px solid #0885F7;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 24px;
+}
+
+#form-more-info input {
+    height: 56px;
+    border-radius: 20px;
+    padding: 0 10px;
+    border: none;
+    margin-top: -64px;
+    margin-left: 8px;
+    outline: none;
+}
+
+#form-more-info label {
+    background-color: #0885F7;
+    color: #FDFDFD;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    max-width: 245px;
+    height: 116px;
+}
+
+#form-more-info ::placeholder {
+    color: #A6A6A6;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+#form-more-info input[type="text"],
+#form-more-info input[type="email"],
+#form-more-info input[type="tel"] {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #171717;
+}
+
+#form-more-info button {
+    margin: 70px auto 0;
+    display: block;
+    background-color: #0885F7;
+    border: none;
+    outline: none;
+    width: 400px;
+    height: 108px;
+    border-radius: 68px;
+    color: #FDFDFD;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
 
 @media screen and (min-width: 960px) {
     .footer {
@@ -926,6 +1021,14 @@ figure#fake {
 @media (max-width:480px) {
     .quem-somos #hero {
         height: 180px;
+    }
+    #form-more-info button {
+        max-width: 100%;
+        height: 70px;
+        font-size: 28px;
+    }
+    #mais-info {
+        padding: 60px 0;
     }
 }
 
