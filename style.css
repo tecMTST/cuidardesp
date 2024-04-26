@@ -409,6 +409,7 @@ h2 {
     flex-wrap: wrap;
 }
 
+.fake-video-container, 
 .video-wrapper {
     position: relative;
     padding-bottom: 56.25%; /* Proporção 16:9: 9 dividido por 16 vezes 100 */
@@ -419,12 +420,17 @@ h2 {
     border-radius: 20px;
 }
 
+.fake-video-container iframe, 
 .video-wrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.fake-video-container {
+    margin: 0;
 }
 
 .video-container {
@@ -733,7 +739,9 @@ figure#fake {
     .footer__social {
         margin-top: 18px;
     }
-    
+    .fake-video-container {
+        padding-bottom: 27%;
+    }
 }
 
 @media (max-width:960px) {
