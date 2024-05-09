@@ -166,7 +166,7 @@ h2 {
 }
 
 .thumb img {
-    height: 100%;
+    height: auto;
     object-fit: cover;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
