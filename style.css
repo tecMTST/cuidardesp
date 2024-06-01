@@ -1077,6 +1077,9 @@ div#informacoes {
     #mais-info {
         padding: 60px 0;
     }
+    #mais-info {
+        margin-top: -120px;
+    }
 }
 
 /* Modal -> */
