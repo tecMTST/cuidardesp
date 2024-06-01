@@ -730,6 +730,11 @@ div#informacoes {
     width: 100%;
 }
 
+#mais-info {
+    padding-top: 0;
+    margin-top: -120px;
+}
+
 
 @media screen and (min-width: 960px) {
     .footer {
@@ -1045,6 +1050,18 @@ div#informacoes {
     }
     .fake-links .fake-title {
         text-align: center;
+    }
+
+    section#proposta {
+        margin: 0;
+    }
+
+    div#informacoes {
+        max-height: max-content;
+    }
+
+    #mais-info {
+        margin-top: -60px;
     }
 }
 
