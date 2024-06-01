@@ -709,6 +709,27 @@ figure#fake {
     cursor: pointer;
 }
 
+/* Tira o app do site */
+
+section#proposta {
+    margin: 100px 0;
+}
+
+#participe {
+    padding-top: 30px;
+}
+
+div#informacoes {
+    margin-top: 0;
+    padding-top: 40px;
+    max-height: 730px;;
+}
+
+.thumb img {
+    max-height: 394px;
+    width: 100%;
+}
+
 
 @media screen and (min-width: 960px) {
     .footer {
