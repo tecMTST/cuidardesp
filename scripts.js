@@ -52,3 +52,53 @@ document.querySelectorAll('.no-click').forEach(function (link) {
         event.preventDefault(); // Isso impede o comportamento padrão do clique
     });
 });
+
+/* document.querySelectorAll('.card .head-card').forEach(header => {
+    header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        const arrow = header.querySelector('.arrow');
+        const headcard = header.querySelector('.head-card');
+
+        if (content.style.display === 'block') {
+            content.style.display = 'none';
+            arrow.classList.remove('up');
+            arrow.src = '../img/down-arrow.png';  // Imagem da seta para baixo
+            header.classList.add('hide');
+            header.classList.remove('view');
+        } else {
+            content.style.display = 'block';
+            arrow.classList.add('up');
+            arrow.src = '../img/up-arrow.png';  // Imagem da seta para cima
+            header.classList.add('view');
+            header.classList.remove('hide');
+        }
+    });
+});
+ */
+
+document.querySelectorAll('.card .head-card').forEach(header => {
+    header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        const arrow = header.querySelector('.arrow');
+
+        if (content.classList.contains('open')) {
+            content.classList.remove('open');
+            content.style.maxHeight = null;
+            arrow.classList.remove('up');
+            arrow.src = '../img/down-arrow.png';  // Imagem da seta para baixo
+            header.classList.add('hide');
+            header.classList.remove('view');
+        } else {
+            document.querySelectorAll('.content').forEach(c => {
+                c.classList.remove('open');
+                c.style.maxHeight = null;
+            });
+            content.classList.add('open');
+            content.style.maxHeight = content.scrollHeight + 'px';
+            arrow.classList.add('up');
+            arrow.src = '../img/up-arrow.png';  // Imagem da seta para cima
+            header.classList.add('view');
+            header.classList.remove('hide');
+        }
+    });
+});
