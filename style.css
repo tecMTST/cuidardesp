@@ -803,18 +803,19 @@ div#informacoes {
 .content .container-contents {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .conteudo-interno {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 70%;
 }
 
 .container-contents .thumbnail {
-    width: 50%;
+    width: 20%;
 }
-
 
 
 .conteudo-interno h4 {
@@ -882,6 +883,12 @@ div#informacoes {
 
 .head-card.view.card10 {
     background-color:#08F477;
+}
+
+.container-contents .thumbnail img {
+    height: 165px;
+    width: 225px;
+    object-fit: cover;
 }
 
 @media screen and (min-width: 960px) {
