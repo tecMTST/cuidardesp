@@ -891,6 +891,21 @@ div#informacoes {
     object-fit: cover;
 }
 
+li.header__item.menu-btn.btn-programa {
+    width: 200px;
+    height: 36px;
+}
+
+li.header__item.menu-btn.btn-programa a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+img.seta-download {
+    max-width: 20px;
+}
+
 @media screen and (min-width: 960px) {
     .footer {
         flex-direction: row;
