@@ -906,6 +906,23 @@ img.seta-download {
     max-width: 20px;
 }
 
+.cont-secretariado {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.equipe {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 @media screen and (min-width: 960px) {
     .footer {
         flex-direction: row;
@@ -1252,6 +1269,21 @@ img.seta-download {
     .conteudo-interno {
         width: 100%;
     }
+    .cont-secretariado {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 20px;
+    }
+    .container-contents .thumbnail {
+        width: 100%;
+    }
+    .container-contents .thumbnail img {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+    
 }
 
 @media (max-width:480px) {
