@@ -849,15 +849,15 @@ div#informacoes {
     transition: max-height 0.5s ease-out;
 }
 
-.head-card.view.card2 {
+.head-card.view.card-verde {
     background-color:#08F477;
 }
 
-.head-card.view.card3 {
+.head-card.view.card-vermelho {
     background-color:#FC4242;
 }
 
-.head-card.view.card4 {
+.head-card.view.card-azul {
     background-color:#0885F7;
 }
 
