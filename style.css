@@ -923,6 +923,12 @@ img.seta-download {
     gap: 10px;
 }
 
+header.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
 @media screen and (min-width: 960px) {
     .footer {
         flex-direction: row;
@@ -955,6 +961,7 @@ img.seta-download {
     .fake-video-container {
         padding-bottom: 27%;
     }
+    
 }
 
 @media (max-width:960px) {

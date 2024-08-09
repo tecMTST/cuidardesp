@@ -130,7 +130,7 @@ img {
 
 @media screen and (min-width: 920px) {
     .header {
-        padding: 58px 7% 12px;
+        padding: 20px 7% 12px;
     }
 
     .header__title {
